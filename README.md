@@ -1,6 +1,6 @@
 ## Implementacao do projeto [CRUD em PHP](https://github.com/joaovitorleffa/Programacao-Web-PHP) puro
 ### Estrutura MVC
-O CodeIgniter possibilita a construcaoo de aplicacoes de formas simples e rápida. Consegui ver isso na pratica realizando esse pequeno projeto.
+O CodeIgniter possibilita a construcao de aplicacoes de forma simples e rápida, pude ver isso na pratica realizando esse pequeno projeto.
 ### Pages
 #### Home
 ![Home](./images-project/home.png)
