@@ -21,7 +21,7 @@ class App extends BaseConfig
 	| environments.
 	|
 	*/
-	public $baseURL = 'http://localhost/LPW/code/project-root/public/';
+	public $baseURL = 'http://localhost/LPW/code1/code/project-root/public/';
 
 	/*
 	|--------------------------------------------------------------------------

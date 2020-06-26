@@ -5,6 +5,9 @@ use CodeIgniter\Model;
 class CustomersModel extends Model {
     protected $table = 'clientes';
     protected $primaryKey = 'id_cliente';
+    protected $allowedFields = [
+        'nome', 'email', 'telefone', 'endereco'
+    ];
 
     public function getCustomers($id = null)
     {
