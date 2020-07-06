@@ -87,5 +87,26 @@ class Customers extends Controller {
 
         return redirect()->route('admin/customers');
     }
+
+    public function search()
+    {
+        $customers = new CustomersModel;
+        
+        $name = $this->request->getVar('search');
+        
+        $customers->orLike('nome', $name)
+            ->orLike('id_cliente', $name)
+            ->orLike('email', $name)
+            ->orLike('telefone', $name)
+            ->orLike('endereco', $name);
+
+        $data = [
+            'customers' => $customers->getCustomers()
+        ];
+
+        echo view('admin/templates/header');
+        echo view('admin/customers/list', $data);
+        echo view('admin/templates/footer');
+    }
 }
 ?>

@@ -45,7 +45,7 @@ $routes->add('/admin', 'Admin\Admin::index');
 $routes->add('/admin/logout', 'Admin\Admin::logout');
 $routes->add('/admin/validate-login', 'Admin\Users::validateLogin');
 
-//admin/clients
+//admin/customers
 $routes->add('/admin/customers', 'Admin\Customers::index');
 $routes->add('/admin/customers/(:num)', 'Admin\Customers::details/$1');
 $routes->add('/admin/customers/insert', 'Admin\Customers::insert');
@@ -53,6 +53,10 @@ $routes->add('/admin/customers/insert-action', 'Admin\Customers::insertAction');
 $routes->add('/admin/customers/update/(:num)', 'Admin\Customers::update/$1');
 $routes->add('/admin/customers/update-action/(:num)', 'Admin\Customers::updateAction/$1');
 $routes->add('/admin/customers/delete/(:num)', 'Admin\Customers::delete/$1');
+$routes->add('/admin/customers/search', 'Admin\Customers::search');
+
+//api/clients
+$routes->add('/api/clients', 'Api\Customers::index');
 
 /**
  * --------------------------------------------------------------------

@@ -1,6 +1,15 @@
   <div class="row d-flex justify-content-center">
     <main class="col-lg-8 col-md-8 col-sm-12">
       <h1 class="text-center">Clientes</h1>
+      <form 
+      name="form"
+      action="<?=base_url('admin/customers/search')?>" 
+      method="POST" 
+      enctype="multipart/form-data"
+      >
+        <input type="text" name="search" class="form-control" placeholder="Pesquisar..." required>
+        <input type="submit" class="btn btn-primary mt-2 mb-2" value="Pesquisar">
+      </form>
       <table class="table table-striped">
         <thead>
           <tr>

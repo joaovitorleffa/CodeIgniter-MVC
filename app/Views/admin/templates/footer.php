@@ -4,5 +4,6 @@
       </footer>
     </div>
   </div>
+  <script src="<?=base_url('assets/javascript/validation.js')?>"></script>
 </body>
 </html>
